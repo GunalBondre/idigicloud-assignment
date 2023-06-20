@@ -68,8 +68,10 @@ const Sidebar = () => {
             key={route.path}
             className={`menu-item ${isActive(route.path) ? "active" : ""}`}
           >
-            {renderIcon(route.icon)}
-            <h4 className="submenu">{route.name}</h4>
+            <div className={"submenu-wrapper"}>
+              {renderIcon(route.icon)}
+              <h4 className="submenu">{route.name}</h4>
+            </div>
           </Link>
         );
       });
