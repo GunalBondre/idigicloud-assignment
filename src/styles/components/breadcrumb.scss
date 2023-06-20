@@ -1,0 +1,23 @@
+.breadcrumb {
+  max-width: 120rem;
+  margin: 2rem;
+
+  &>*{
+    display: inline-block;
+    margin-right: 1rem;
+  }
+  .crumb {
+    &:after {
+      content: '>';
+      margin-left: 1rem;
+    }
+    &:last-child{
+      &:after{
+        display: none;
+      }
+    }
+  }
+  .active {
+     color: red;
+  }
+}

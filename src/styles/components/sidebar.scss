@@ -1,0 +1,42 @@
+@import "../base/variables";
+
+.sidebar{
+  width: 25vw;
+  height: 100vh;
+  color: white;
+  background: $sidebar-bg;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+
+  .menu-item{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+  }
+  .submenu{
+    margin-left: 5px;
+
+  }
+  .menu-wrapper{
+    display: flex;
+
+    .icon-component{
+      margin-right: 1rem;
+    }
+  }
+  .submenu-wrapper{
+    display: flex;
+    align-items: center;
+  }
+  .active{
+    color: red;
+  }
+
+  .menu-title-icon-wrapper{
+    display: flex;
+  }
+  .chevron {
+    cursor: pointer;
+  }
+}
